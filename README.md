@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://5ff00d95af2ae32a01ac06f7--objective-poincare-4aacda.netlify.app/">
+    <a href="https://404-page-not-found-rangga.netlify.app/">
       Demo
     </a>
     <span> | </span>
