@@ -1,0 +1,169 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~ */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 77px;
+    padding-right: 77px;
+    box-sizing: border-box;
+}
+
+.header {
+    grid-area: header;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.main {
+    grid-area: main;
+    font-family: 'Space Mono';
+}
+
+.image {
+    float: left;
+    width: 40%;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    display: inline-block;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.text h1 {
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333;
+    font-weight: 700px;
+}
+
+.text p {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    font-weight: 400px;
+    margin-bottom: 64px;
+}
+
+.sub {
+    width: 65%;
+}
+
+a {
+    display: flex;
+    width: 216px;
+    height: 68px;
+    font-size: 14px;
+    font-weight: 700px;
+    color: #fff;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(75, 74, 74);
+}
+
+.footer {
+    grid-area: footer;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* Responsive Breakpoint */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .text h1 {
+        font-size: 48px;
+        line-height: 71px;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width: 576px) {
+    .container {
+        padding-top: 20px;
+        padding-left: 24;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text h1 {
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+
+}
